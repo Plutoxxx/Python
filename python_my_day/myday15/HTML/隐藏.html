@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .hide{
+            display: none;
+        }
+        .c1{
+            background-color: black;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            opacity: 0.5;
+        }
+        .c2{
+            background: white;
+            width: 500px;
+            height: 500px;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: -250px;
+            margin-top: -250px;
+        }
+    </style>
+</head>
+<body style="margin: 0;">
+    <div>
+        <input type="button" value="确定" onclick="ShowModel();"/>
+    </div>
+    <div id="i1" class="c1 hide">
+
+    </div>
+    <div id="i2" class="c2 hide">
+        <p><input type="text" /></p>
+        <p><input type="text" /></p>
+        <p>
+            <input type="button" value="取消" onclick="HideModel();"/>
+            <input type="button" value="确定"/>
+        </p>
+    </div>
+    <script>
+        function ShowModel() {
+            document.getElementById("i1").classList.remove("hide");
+            document.getElementById("i2").classList.remove("hide");
+        }
+        function HideModel() {
+            document.getElementById("i1").classList.add("hide");
+            document.getElementById("i2").classList.add("hide");
+        }
+    </script>
+</body>
+</html>
