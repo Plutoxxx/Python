@@ -1,0 +1,52 @@
+body{
+    margin: 0 auto;
+}
+.pg-header{
+    background: cyan;
+    height: 48px;
+}
+.pg-header .logo{
+    background-color: #2459a2;
+    width: 200px;
+    line-height: 48px;
+    text-align: center;
+}
+.pg-header .user{
+    margin-right: 20px;
+    padding: 0 20px;
+    height: 48px;
+    background-color: #dbffbe;
+}
+.pg-header .user:hover{
+    background-color: cadetblue;
+}
+.pg-header .user a img{
+    height: 40px;width: 40px;margin-top: 4px;border-radius: 50%;
+}
+.pg-content .menu{
+    position: absolute;
+    top: 48px;
+    left: 0px;
+    bottom: 0px;
+    width: 200px;
+    background-color: red;
+}
+.pg-content .content{
+    background-color: chocolate;
+    position: absolute;
+    top: 48px;
+    bottom: 0px;
+    right: 0px;
+    left: 200px;
+    overflow: auto;/*少这行代码时左侧菜单栏会跟随滚动条移动*/
+
+}
+.pg-footer{
+    /*background: chocolate;*/
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}

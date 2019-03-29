@@ -1,0 +1,24 @@
+body{
+    margin: 0 auto;
+}
+.pg-header{
+    background: cyan;
+    height: 50px;
+}
+.pg-content .menu{
+    background-color: red;
+    width: 20%;
+}
+.pg-content .content{
+    background-color: chocolate;
+    width: 80%;
+}
+.pg-footer{
+    /*background: chocolate;*/
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
